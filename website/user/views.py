@@ -49,7 +49,7 @@ def formsubmission(request):
 
             
             
-        if(username!="abcd" and password!="12345"):
+        if(username!="abcd" and passwd!="12345"):
 
             m=sql.connect(host="localhost",user="root",passwd="himaja",database='website')
             cursor=m.cursor()
