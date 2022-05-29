@@ -36,6 +36,8 @@ def formsubmission(request):
 
                 #Check the number of faces in the uploaded image. Since, it is a payment system, there can't be more than one face and if more than 1 face is found
     #error page is returned
+            if(p!=""):
+                return render(request,"error.html")
             detector = dlib.get_frontal_face_detector()
             frame =cv2.imread("user/images/" + (f).name)
             gray =cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
