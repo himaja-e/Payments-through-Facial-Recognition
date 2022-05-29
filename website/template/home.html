@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+                height: 200px;
+                width: 400px;
+
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-top: -100px;
+                margin-left: -200px;
+            }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+    <form action=# method="POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form.as_p}}
+        Only jpg,jpeg,png files allowed<br><br>
+        <button type="submit">Save</button>
+        <br><br>
+        <a href="http://localhost:8000/face/">Continue after uploading</a>
+    </form>
+    </div>
+    </center>
+</body>
+</html>
