@@ -53,7 +53,7 @@ Note : Default login provided :- Email id : 'abcd@gmail.com' , Password : '12345
       ![Command Prompt](https://user-images.githubusercontent.com/105623310/170871205-4e350862-b835-4b83-9193-05e8b0c7d8c2.png)
 
 
-7.    Open your browser and type localhost:8000
+7.    Open your browser and type:   localhost:8000
 
 
 8.    The webapp opens! 
