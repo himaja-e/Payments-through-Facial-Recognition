@@ -15,7 +15,7 @@ def handle_uploaded_file(uname,f):
         l = l[:-1]
         for i in l:
             namestr=namestr+i
-        if uname!=namestr:
+        if uname!=namestr or namestr=='abcd':
             return "a"      # validate whether the image is named with username
 
 
