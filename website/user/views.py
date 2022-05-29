@@ -19,6 +19,8 @@ from user import *
 # Create your views here.
 def formsubmission(request):
    
+    def formsubmission(request):
+   
     form = upload()
     p=""
     username=""
@@ -58,8 +60,7 @@ def formsubmission(request):
                 return render(request,"error.html")
         
         
-        return render(request,'home.html',{'form':form})
-
+    return render(request,'home.html',{'form':form})
         
 
 
