@@ -1,0 +1,3 @@
+create database website;
+use website;
+create table users(User_Name varchar(50) not null unique,Email varchar(50) not null unique,Password varchar(50) not null); 
