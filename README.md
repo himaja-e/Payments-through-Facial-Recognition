@@ -11,6 +11,7 @@ Note : Default login provided :- Email id : 'abcd@gmail.com' , Password : '12345
  
 4. Now open MySql command line and run the above file using the following command :
    source "complete path of the file without inverted commas"
+   ![SQL](https://user-images.githubusercontent.com/105623310/170870810-2132cfba-0cfc-4dfa-b196-9166f4a7690e.png)
    
 5. Now, the database is connected.
 
