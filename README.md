@@ -23,15 +23,25 @@ Note : Default login provided :- Email id : 'abcd@gmail.com' , Password : '12345
 
 6.  Open the command prompt and install the following or run the commands: (The following commands can be skipped if the modules are already installed)
     pip install pipenv
+    
     pip install cmake
+    
     pip install dlib
+    
     pip install cmake
+    
     pip install face-recognition
+    
     pip install opencv-python
+    
     pip install mysql-connector
+    
     pip install mysql-connector-python
+    
     pip install django
+    
     pip install distlib
+    
     pip install face-recognition models
     
     
