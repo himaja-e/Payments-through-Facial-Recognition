@@ -19,38 +19,35 @@ from user import *
 # Create your views here.
 def formsubmission(request):
    
-        form = upload()
-        p=""
-        username=""
-        emailid=""
+    form = upload()
+    p=""
+    username=""
+    emailid=""
         
-        
-        if request.method == "POST":
-            form = upload(request.POST,request.FILES)
-            username = request.POST['name']
-            
-            passwd = request.POST['password']
-            if form.is_valid():
-                f=request.FILES['file']
-                p=handle_uploaded_file(username,f)   # save the image in the user directory
+    if request.method == "POST":
+        form = upload(request.POST,request.FILES)
+        username = request.POST['name']
+        passwd = request.POST['password']
+        if form.is_valid():
+            f=request.FILES['file']
+            p=handle_uploaded_file(username,f)   # save the image in the user directory
 
                 #Check the number of faces in the uploaded image. Since, it is a payment system, there can't be more than one face and if more than 1 face is found
     #error page is returned
-                detector = dlib.get_frontal_face_detector()
-                frame =cv2.imread("user/images/" + (f).name)
-                gray =cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-                faces = detector(gray)
-                for count,face in enumerate(faces):
-                    if(count>1):
-                        return render(request,'error.html')
+            detector = dlib.get_frontal_face_detector()
+            frame =cv2.imread("user/images/" + (f).name)
+            gray =cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+            faces = detector(gray)
+            for count,face in enumerate(faces):
+                if(count>1):
+                    return render(request,'error.html')
                     
-            else:
-                form = upload()
+        else:
+            form = upload()
 
             
             
-
-
+        if(username!="abcd" and password!="12345"):
 
             m=sql.connect(host="localhost",user="root",passwd="himaja",database='website')
             cursor=m.cursor()
