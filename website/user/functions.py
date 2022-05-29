@@ -28,7 +28,7 @@ def handle_uploaded_file(uname,f):
             globals()['image_{}'.format(0)] = face_recognition.load_image_file(path+'\\'+f.name)
             if(len(face_recognition.face_encodings(face_recognition.load_image_file(path+'\\'+f.name)))==0):
                 fi.close()
-                os.remove(path+'\\'+f.name)    # an image with duplicate name is removed
+                os.remove(path+'\\'+f.name)    # an image with no face is removed
                 q=path+'\\'+f.name
                 return q
     return ""
