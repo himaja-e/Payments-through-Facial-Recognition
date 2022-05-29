@@ -1,7 +1,7 @@
 # Payments-through-Facial-Recognition
 
 
-Note : Default login provided :- Email id : 'abcd@gmail.com' , Password : '12345'
+Note : Default login provided for login page :- Email id : 'abcd@gmail.com' , Password : '12345'
 
 1.    Install MySql Command Line Client or Server from the following link  https://dev.mysql.com/downloads/shell/
 
